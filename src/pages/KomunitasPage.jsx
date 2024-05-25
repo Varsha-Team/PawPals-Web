@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Col, Row, Card } from 'react-bootstrap'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import komunitasCard from '../assets/img/komunitas/komunitasCard.png';
+import LogoPawpals from '../assets/img/PawpalsLogo.png'
 
 function KomunitasPage() {
     return (
@@ -53,7 +54,7 @@ function KomunitasPage() {
                 </Card>
             </Col>
             <Col>
-                <Card className="Card-Information" style={{ 
+                <Card className="Card-Information1" style={{ 
                     width: '18rem', // Pertahankan lebar yang sama
                     background: '#F2BBB6',
                     borderRadius: '15px',
@@ -64,36 +65,165 @@ function KomunitasPage() {
                         gap: '10px',
                     }}>
                         <div style={{ color: '#D05440', fontSize: '28px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
-                        Forum Chat
+                            Forum Chat
                         </div>
-                        <div style={{ display: 'flex', gap: '29px' }}>
-                        <div style={{ color: 'white', fontSize: '18px', fontFamily: 'IBM Plex Sans, sans-serif' }}>
-                            <span style={{ fontWeight: '600' }}>1.2</span> <span style={{ fontWeight: '400' }}>posts</span>
-                        </div>
-                        <div style={{ color: 'white', fontSize: '18px', fontFamily: 'IBM Plex Sans, sans-serif' }}>
-                            <span style={{ fontWeight: '600' }}>60</span> <span style={{ fontWeight: '400' }}>members</span>
-                        </div>
-                        </div>
+                            <div style={{ display: 'flex', gap: '29px' }}>
+                                <div style={{ color: 'white', fontSize: '18px', fontFamily: 'IBM Plex Sans, sans-serif' }}>
+                                    <span style={{ fontWeight: '600' }}>1.2</span> <span style={{ fontWeight: '400' }}>posts</span>
+                                </div>
+                                <div style={{ color: 'white', fontSize: '18px', fontFamily: 'IBM Plex Sans, sans-serif' }}>
+                                    <span style={{ fontWeight: '600' }}>60</span> <span style={{ fontWeight: '400' }}>members</span>
+                                </div>
+                            </div>
                         <Card.Text style={{ width: '250px', color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '400' }}>
                         Komunitas forum yang didedikasikan untuk pemilik dan penggemar ras kucing. Bergabunglah dalam diskusi tentang ras, pelatihan, anak kucing, ulasan makanan, penyelamatan, dan banyak lagi.
                         </Card.Text>
-                        <div style={{ 
-                        padding: '5px 31px', 
+                        <button style={{ 
+                        padding: '5px 30px', 
                         background: '#D05440', 
                         borderRadius: '15px',
                         display: 'flex',
                         justifyContent: 'flex-start', // Menyesuaikan posisi tombol
                         alignItems: 'center',
                         gap: '14px',
+                        border:'none'
                         }}>
-                        <div style={{ width: '24px', height: '24px', position: 'relative' }}>
-                            <div style={{ width: '18px', height: '18px', left: '3px', top: '3px', position: 'absolute', background: 'white' }}></div>
-                        </div>
-                        <div style={{ color: 'white', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
-                            Join Community
-                        </div>
-                        </div>
+                            <div style={{ width: '24px', height: '24px', position: 'relative' }}>
+                                <img style={{ width: '18px', height: '18px', left: '3px', top: '3px', position: 'absolute', background: 'white' }}></img>
+                            </div>
+                            <div style={{ color: 'white', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                                Join Community
+                            </div>
+                        </button>
                     </Card.Body>
+                    </Card>
+                    <Card className="Card-Information2" 
+                        style={{ 
+                            width: '18rem', 
+                            margin: '20px 0', 
+                            background: '#F2BBB6',
+                            borderRadius: '15px', 
+                            overflow: 'hidden',
+                        }}
+                        >
+                        <Card.Body style={{ 
+                            display: 'flex', 
+                            flexDirection: 'column',
+                            gap: '12px', // Gap antara elemen utama
+                            padding: 0, // Menghapus padding default Card.Body
+                        }}>
+                            <div style={{ 
+                            padding: '20px', // Padding internal bagian atas
+                            color: '#D05440', 
+                            fontSize: '28px', 
+                            fontFamily: 'IBM Plex Sans, sans-serif', 
+                            fontWeight: '600', 
+                            }}>
+                            Our Top Forum
+                            </div>
+                            
+                            <div style={{ 
+                            display: 'flex', 
+                            flexDirection: 'column', 
+                            gap: '9px', // Gap antara sub-bagian
+                            padding: '0 20px 20px 20px', // Padding internal bagian bawah
+                            }}>
+                            <div className="TitleForum" style={{ color: '#D05440', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                                Health and Nutrition
+                            </div> 
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}> 
+                                    <div style={{ width: '13px', height: '12px', position: 'relative' }}>
+                                        <img style={{ width: '13px', height: '11.20px', left: 0, top: '0.75px', position: 'absolute', background: 'white' }}></img>
+                                    </div>
+                                        <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>100K</div>
+                                    <div style={{ width: '16px', height: '14px', position: 'relative' }}>
+                                        <img style={{ width: '15.50px', height: '9.19px', left: '0.25px', top: '2.41px', position: 'absolute', background: 'white' }}></img>
+                                    </div>
+                                    <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>110K</div>
+                                </div>
+                            <div className="TitleForum" style={{ color: '#D05440', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                                Cat and Dog
+                            </div> 
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}> 
+                                    <div style={{ width: '13px', height: '12px', position: 'relative' }}>
+                                        <img style={{ width: '13px', height: '11.20px', left: 0, top: '0.75px', position: 'absolute', background: 'white' }}></img>
+                                    </div>
+                                        <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>100K</div>
+                                    <div style={{ width: '16px', height: '14px', position: 'relative' }}>
+                                        <img style={{ width: '15.50px', height: '9.19px', left: '0.25px', top: '2.41px', position: 'absolute', background: 'white' }}></img>
+                                    </div>
+                                    <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>110K</div>
+                                </div>
+                            <div className="TitleForum" style={{ color: '#D05440', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                                Petcare and Shelter
+                            </div> 
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}> 
+                                    <div style={{ width: '13px', height: '12px', position: 'relative' }}>
+                                        <img style={{ width: '13px', height: '11.20px', left: 0, top: '0.75px', position: 'absolute', background: 'white' }}></img>
+                                    </div>
+                                        <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>100K</div>
+                                    <div style={{ width: '16px', height: '14px', position: 'relative' }}>
+                                        <img style={{ width: '15.50px', height: '9.19px', left: '0.25px', top: '2.41px', position: 'absolute', background: 'white' }}></img>
+                                    </div>
+                                    <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>110K</div>
+                                </div>
+                            </div>
+                        </Card.Body>
+                        </Card>
+                        <Card 
+                            className="Card-Information3" 
+                            style={{ 
+                                width: '18rem', 
+                                margin: '20px 0', 
+                                background: '#F2BBB6',
+                                borderRadius: '15px', 
+                                overflow: 'hidden',
+                            }}
+                            >
+                            <Card.Body style={{ 
+                                display: 'flex', 
+                                flexDirection: 'column',
+                                alignItems: 'center', // Pusatkan item secara horizontal
+                                justifyContent: 'center', // Pusatkan item secara vertikal
+                                gap: '20px', // Tambahkan jarak antara elemen
+                                padding: '30px', // Padding internal yang lebih besar
+                            }}>
+
+                                <div style={{ 
+                                color: '#D05440', 
+                                fontSize: '28px', 
+                                fontFamily: 'IBM Plex Sans, sans-serif', 
+                                fontWeight: '600', 
+                                textAlign: 'center' // Pusatkan teks
+                                }}>
+                                Download Our Mobile App
+                                </div>
+
+                                <img 
+                                src={LogoPawpals} 
+                                alt="Logo Pawpals" 
+                                style={{ width: '150px', height: '150px' }} 
+                                />
+
+                                <button style={{ 
+                                padding: '5px 30px', 
+                                background: '#D05440', 
+                                borderRadius: '15px',
+                                border: 'none',
+                                color: 'white',
+                                fontSize: '16px',
+                                fontFamily: 'IBM Plex Sans, sans-serif',
+                                fontWeight: '600',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '14px',
+                                }}>
+                                <div style={{ width: '24px', height: '24px', position: 'relative' }}>
+                                    <img style={{ width: '18px', height: '18px', left: '3px', top: '3px', position: 'absolute', background: 'white' }} alt="Icon" />
+                                </div>
+                                    Download Here
+                                </button>
+                        </Card.Body>
                     </Card>
                 </Col>
             </Row>
