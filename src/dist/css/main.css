@@ -97,14 +97,14 @@
 
 .title {
     font-size: 56px;
-    color: rgba(0, 0, 0, 0.88);
+    color: var(--button-color);
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
 }
 
 .subtitle {
     font-size: 28px;
-    color: rgba(0, 0, 0, 0.88);
+    color: #000000;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 500;
 }
