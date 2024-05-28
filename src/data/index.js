@@ -10,6 +10,8 @@ import People1 from "../assets/img/testimonial/people-1.jpg";
 import People2 from "../assets/img/testimonial/people-2.jpg";
 import People3 from "../assets/img/testimonial/people-3.jpg";
 
+import komunitas1 from "../assets/img/komunitas/komunitasCard.png"
+
 export const navLinks = [
 ];
 
@@ -128,3 +130,31 @@ export const testimonial = [
     star5: "fa-solid fa-star-half-stroke",
   },
 ];
+
+export const komunitas = [
+  {
+    id: 1,
+    image: komunitas1,
+    category: "Anjing Dan Kucing",
+    desc: "Halo semuanya, disini kami membahas hal menarik mengenai anjing dan kucing",
+    member: "1300 member",
+    comment: "999+",
+  },
+  {
+    id: 2,
+    image: komunitas1,
+    category: "Anjing",
+    desc: "Halo semuanya, disini kami membahas hal menarik mengenai anjing",
+    member: "1400 member",
+    comment: "989+",
+  },
+  {
+    id: 3,
+    image: komunitas1,
+    category: "Kucing",
+    desc: "Halo semuanya, disini kami membahas hal menarik mengenai kucing",
+    member: "1500 member",
+    comment: "979+",
+  },
+
+]

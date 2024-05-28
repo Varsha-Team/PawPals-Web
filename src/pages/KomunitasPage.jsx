@@ -3,56 +3,63 @@ import { Container, Col, Row, Card } from 'react-bootstrap'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import komunitasCard from '../assets/img/komunitas/komunitasCard.png';
 import LogoPawpals from '../assets/img/PawpalsLogo.png'
+import { komunitas } from "../data/index.js"
 
 function KomunitasPage() {
     return (
         <Container className='komunitas py-5' >
             <Row>
             <Col>
+                {komunitas.map((data) => (
                     <Card 
                     className="Card-Komunitas" 
                     style={{ 
-                    width: '50rem', // Sesuai dengan desain Figma
-                    padding: '9px 11px', // Padding internal card
-                    background: '#F2BBB6',
-                    borderRadius: '15px',
-                    overflow: 'hidden',
+                        width: '50rem', 
+                        padding: '9px 11px',
+                        margin: '10px 0px 0px 0px',
+                        background: '#F2BBB6',
+                        borderRadius: '15px',
+                        overflow: 'hidden',
+                        cursor: 'pointer',
+                        transition: 'background 0.3s ease',
                     }}
-                >
-                    <Card.Body style={{ display: 'flex', alignItems: 'center', gap: '48px' }}> {/* Flexbox untuk mengatur layout */}
-                    <img 
-                        src={komunitasCard} 
+                    onMouseOver={(e) => { e.currentTarget.style.background = '#E69993'; }}
+                    onMouseOut={(e) => { e.currentTarget.style.background = '#F2BBB6'; }} 
+                    key={data.id}
+                    >
+                    <Card.Body style={{ display: 'flex', alignItems: 'center', gap: '48px' }}>
+                        <img 
+                        src={data.image} 
                         style={{
-                        width: '123px', 
-                        height: '118px', 
-                        borderRadius: '15px' 
+                            width: '123px', 
+                            height: '118px', 
+                            borderRadius: '15px' 
                         }} 
                         alt="Komunitas Card"
-                    />
-                    <div style={{ flexDirection: 'column', gap: '10px' }}> {/* Kolom deskripsi */}
+                        />
+                        <div style={{ flexDirection: 'column', gap: '10px' }}>
                         <div style={{ color: 'white', fontSize: '18px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
-                        Anjing dan Kucing
+                            {data.category} {/* Menampilkan kategori */}
                         </div>
                         <Card.Title className='kategorikomunitas' style={{ color: '#D05440', fontSize: '28px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
-                        Halo semuanya, disini kami membahas hal menarik mengenai anjing dan kucing 
+                            {data.desc} {/* Menampilkan deskripsi */}
                         </Card.Title>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}> {/* Wrapper informasi anggota */}
-                        <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
-                            13000 Member
-                        </div>
-                        <div style={{ padding: '6px', background: 'white', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                            <div style={{ width: '13px', height: '12px', position: 'relative' }}>
-                            <div style={{ width: '13px', height: '11.20px', left: '0', top: '0.75px', position: 'absolute', background: '#756E6C' }}></div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                            <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                            {data.member} {/* Menampilkan jumlah anggota */}
                             </div>
-                            <div style={{ color: '#756E6C', fontSize: '14px', fontFamily: 'IBM Plex Sans', fontWeight: '600' }}>
-                            4030
+                            <div style={{ padding: '6px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                            {/* ... (ikon komentar tidak berubah) ... */}
+                            <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                                {data.comment} {/* Menampilkan jumlah komentar */}
+                            </div>
                             </div>
                         </div>
-                        </div>
-                    </div> 
+                        </div> 
                     </Card.Body>
-                </Card>
-            </Col>
+                    </Card>
+                ))}
+                </Col>
             <Col>
                 <Card className="Card-Information1" style={{ 
                     width: '18rem', // Pertahankan lebar yang sama
