@@ -1,5 +1,5 @@
 import {Navbar, Container, Nav, Image} from "react-bootstrap"
-import logo from "./PawpalsNavbar.png";
+import logo from "../assets/img/PawpalsNavbar.png";
 import { NavLink } from "react-router-dom"
 import Homepage from "../pages/Homepage";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';

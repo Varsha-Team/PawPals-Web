@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import komunitasCard from '../assets/img/komunitas/komunitasCard.png';
 import LogoPawpals from '../assets/img/PawpalsLogo.png'
 import { komunitas } from "../data/index.js"
+import { FaCommentDots , FaEye } from "react-icons/fa";
 
 function KomunitasPage() {
     return (
@@ -95,9 +96,7 @@ function KomunitasPage() {
                         gap: '14px',
                         border:'none'
                         }}>
-                            <div style={{ width: '24px', height: '24px', position: 'relative' }}>
-                                <img style={{ width: '18px', height: '18px', left: '3px', top: '3px', position: 'absolute', background: 'white' }}></img>
-                            </div>
+                            <div style={{ width: '24px', height: '24px', position: 'relative' }}></div>
                             <div style={{ color: 'white', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
                                 Join Community
                             </div>
@@ -140,11 +139,11 @@ function KomunitasPage() {
                             </div> 
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}> 
                                     <div style={{ width: '13px', height: '12px', position: 'relative' }}>
-                                        <img style={{ width: '13px', height: '11.20px', left: 0, top: '0.75px', position: 'absolute', background: 'white' }}></img>
+                                        <FaCommentDots style={{width: '15px', height: '15px', position: 'absolute', color: 'white' }}/>
                                     </div>
                                         <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>100K</div>
                                     <div style={{ width: '16px', height: '14px', position: 'relative' }}>
-                                        <img style={{ width: '15.50px', height: '9.19px', left: '0.25px', top: '2.41px', position: 'absolute', background: 'white' }}></img>
+                                        <FaEye style={{width: '15px', height: '15px', position: 'absolute', color: 'white' }} />
                                     </div>
                                     <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>110K</div>
                                 </div>
@@ -153,11 +152,11 @@ function KomunitasPage() {
                             </div> 
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}> 
                                     <div style={{ width: '13px', height: '12px', position: 'relative' }}>
-                                        <img style={{ width: '13px', height: '11.20px', left: 0, top: '0.75px', position: 'absolute', background: 'white' }}></img>
+                                        <FaCommentDots style={{width: '15px', height: '15px', position: 'absolute', color: 'white' }}/>
                                     </div>
                                         <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>100K</div>
                                     <div style={{ width: '16px', height: '14px', position: 'relative' }}>
-                                        <img style={{ width: '15.50px', height: '9.19px', left: '0.25px', top: '2.41px', position: 'absolute', background: 'white' }}></img>
+                                        <FaEye style={{width: '15px', height: '15px', position: 'absolute', color: 'white' }} />
                                     </div>
                                     <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>110K</div>
                                 </div>
@@ -166,11 +165,11 @@ function KomunitasPage() {
                             </div> 
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}> 
                                     <div style={{ width: '13px', height: '12px', position: 'relative' }}>
-                                        <img style={{ width: '13px', height: '11.20px', left: 0, top: '0.75px', position: 'absolute', background: 'white' }}></img>
+                                        <FaCommentDots style={{width: '15px', height: '15px', position: 'absolute', color: 'white' }}/>
                                     </div>
                                         <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>100K</div>
                                     <div style={{ width: '16px', height: '14px', position: 'relative' }}>
-                                        <img style={{ width: '15.50px', height: '9.19px', left: '0.25px', top: '2.41px', position: 'absolute', background: 'white' }}></img>
+                                        <FaEye style={{width: '15px', height: '15px', position: 'absolute', color: 'white' }} />
                                     </div>
                                     <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>110K</div>
                                 </div>
@@ -225,9 +224,6 @@ function KomunitasPage() {
                                 alignItems: 'center',
                                 gap: '14px',
                                 }}>
-                                <div style={{ width: '24px', height: '24px', position: 'relative' }}>
-                                    <img style={{ width: '18px', height: '18px', left: '3px', top: '3px', position: 'absolute', background: 'white' }} alt="Icon" />
-                                </div>
                                     Download Here
                                 </button>
                         </Card.Body>
