@@ -3,14 +3,17 @@ import { Link } from "react-router-dom";
 
 const FooterComponent = () => {
     return (
-        <footer className="d-flex flex-column align-items-center" style={{ backgroundColor: '#F2BBB6', padding: '40px 0' }}> {/* Tambahkan background dan padding */}
+        <footer className="d-flex flex-column align-items-center" style={{ backgroundColor: '#E38B54', padding: '40px 0' }}> {/* Tambahkan background dan padding */}
         <Container>
             <Row className="justify-content-between"> {/* Gunakan justify-content-between untuk meratakan kolom */}
             <Col xs={12} md={3} lg={2}> 
             <img
                 src="../public/PawpalsLogo.png"
                 alt="PawPals Logo"
-                style={{ width: '160px', height: 'auto' }} // Sesuaikan nilai width dan height 
+                style={{ width: '160px', 
+                        height: 'auto',
+                        filter: 'drop-shadow(0px 4px 40px #ffff)',
+                    }} 
                 />
             </Col>
 

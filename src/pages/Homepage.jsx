@@ -18,7 +18,7 @@ import FooterComponent from "../components/FooterComponent.jsx";
 
 const Homepage = () => {
     return (
-        <div className="homepage" style={{ backgroundColor: '#FBEDEC' }}>
+        <div className="homepage" style={{ backgroundColor: '#ffffff' }}>
             <header>
                 <div className="header-container">
                     <div className="content-container">
@@ -76,7 +76,7 @@ const Homepage = () => {
                     className="swiperArtikel"
                 >
                     {artikelHomepage.map((data) => {
-                        return <SwiperSlide className="slideArtikel shadow" key={data.id} >
+                        return <SwiperSlide className="slideArtikel shadow" key={data.id} style={{ border: '1px solid black' }} >
                             <Row>
                                 <Col>
                                     <img className="artikelImage" src={data.image} alt="" />
@@ -84,7 +84,7 @@ const Homepage = () => {
                                 <Col className="artikelDesk">
                                     <h5 className="artikelTitle fw-bold">{data.title}</h5>
                                     <p className="desk">{data.desk}</p>
-                                    <button style={{padding:'5px 15px 5px 15px', color: 'white', background: '#D05440', borderRadius: 25, border: 'none'}}>Baca Selengkapnya</button>
+                                    <button style={{padding:'5px 15px 5px 15px', color: 'white', background: '#ED6A09', borderRadius: 25, border: 'none'}}>Baca Selengkapnya</button>
                                 </Col>
                             </Row>
                         </SwiperSlide>;           
@@ -96,7 +96,7 @@ const Homepage = () => {
             <Container className="komunitasHomepage pt-5">
                 <Row className="pt-5">
                     <Col>
-                        <div style={{ width: 400, height: 400, background: '#F2BBB6', borderRadius: 9999, position: 'relative' }}>
+                        <div style={{ width: 400, height: 400, background: '#E38B54', borderRadius: 9999, position: 'relative' }}>
                             <img style={{ width: 500, height: 500, position: 'absolute', top: '-100px', left: '-25px' }} src="../public/komunitasHomepage.png" />
                         </div>
                     </Col>
@@ -107,7 +107,7 @@ const Homepage = () => {
                             style={{
                             padding:'10px 30px 10px 30px',
                             textAlign: 'center',
-                            background: '#D05440',
+                            background: '#ED6A09',
                             color: 'white',
                             fontSize: 18,
                             fontFamily: 'IBM Plex Sans, sans-serif',
@@ -121,7 +121,7 @@ const Homepage = () => {
                     </Col>
                 </Row>
             </Container>
-            <div className="testimoni mt-5 py-5" style={{ backgroundColor: '#F2BBB6' }}>
+            <div className="testimoni mt-5 py-5" style={{ backgroundColor: '#E38B54' }}>
             <Container>
                 <div className="artikel-title">
                     <div className="artikel-header">Ulasan Anda</div>
@@ -191,7 +191,7 @@ const Homepage = () => {
                             margin:'20px 0px 0px 0px',
                             padding:'10px 50px 10px 50px',
                             textAlign: 'center',
-                            background: '#D05440',
+                            background: '#ED6A09',
                             color: 'white',
                             fontSize: 18,
                             fontFamily: 'IBM Plex Sans, sans-serif',
