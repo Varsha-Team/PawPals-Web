@@ -1,8 +1,8 @@
 import React from 'react'
-import { Container, Col, Row, Card } from 'react-bootstrap'
+import { Container, Col, Row, Card, Form } from 'react-bootstrap'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import komunitasCard from '../assets/img/komunitas/komunitasCard.png';
-import LogoPawpals from '../assets/img/PawpalsLogo.png'
+import LogoPawpals from '../assets/img/Pawpalsmobile.png'
 import { komunitas } from "../data/index.js"
 import { FaCommentDots , FaEye } from "react-icons/fa";
 
@@ -11,21 +11,30 @@ function KomunitasPage() {
         <Container className='komunitas py-5' >
             <Row>
             <Col>
+            <Form.Control
+                placeholder="Search"
+                aria-label="Search"
+                style={{
+                    border: '1px solid black',
+                    borderRadius: '15px',
+                }} 
+                />
                 {komunitas.map((data) => (
                     <Card 
                     className="Card-Komunitas" 
                     style={{ 
                         width: '50rem', 
-                        padding: '9px 11px',
-                        margin: '10px 0px 0px 0px',
-                        background: '#F2BBB6',
+                        padding: '5px 10px',
+                        margin: '20px 0px 0px 0px',
+                        background: '#ffffff',
                         borderRadius: '15px',
+                        border: '1px solid black',
                         overflow: 'hidden',
                         cursor: 'pointer',
                         transition: 'background 0.3s ease',
                     }}
-                    onMouseOver={(e) => { e.currentTarget.style.background = '#E69993'; }}
-                    onMouseOut={(e) => { e.currentTarget.style.background = '#F2BBB6'; }} 
+                    onMouseOver={(e) => { e.currentTarget.style.background = '#F3D2B5'; }}
+                    onMouseOut={(e) => { e.currentTarget.style.background = '#ffffff'; }} 
                     key={data.id}
                     >
                     <Card.Body style={{ display: 'flex', alignItems: 'center', gap: '48px' }}>
@@ -39,19 +48,19 @@ function KomunitasPage() {
                         alt="Komunitas Card"
                         />
                         <div style={{ flexDirection: 'column', gap: '10px' }}>
-                        <div style={{ color: 'white', fontSize: '18px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                        <div style={{ color: 'black', fontSize: '18px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
                             {data.category} {/* Menampilkan kategori */}
                         </div>
-                        <Card.Title className='kategorikomunitas' style={{ color: '#D05440', fontSize: '28px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                        <Card.Title className='kategorikomunitas' style={{ color: '#E38B54', fontSize: '28px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
                             {data.desc} {/* Menampilkan deskripsi */}
                         </Card.Title>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-                            <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                            <div style={{ color: 'black', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
                             {data.member} {/* Menampilkan jumlah anggota */}
                             </div>
                             <div style={{ padding: '6px', display: 'flex', alignItems: 'center', gap: '4px' }}>
                             {/* ... (ikon komentar tidak berubah) ... */}
-                            <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                            <div style={{ color: 'black', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
                                 {data.comment} {/* Menampilkan jumlah komentar */}
                             </div>
                             </div>
@@ -64,7 +73,7 @@ function KomunitasPage() {
             <Col>
                 <Card className="Card-Information1" style={{ 
                     width: '18rem', // Pertahankan lebar yang sama
-                    background: '#F2BBB6',
+                    background: '#E38B54',
                     borderRadius: '15px',
                     }}>
                     <Card.Body style={{ 
@@ -72,7 +81,7 @@ function KomunitasPage() {
                         flexDirection: 'column',
                         gap: '10px',
                     }}>
-                        <div style={{ color: '#D05440', fontSize: '28px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                        <div style={{ color: 'white', fontSize: '28px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
                             Forum Chat
                         </div>
                             <div style={{ display: 'flex', gap: '29px' }}>
@@ -88,7 +97,7 @@ function KomunitasPage() {
                         </Card.Text>
                         <button style={{ 
                         padding: '5px 30px', 
-                        background: '#D05440', 
+                        background: '#ED6A09', 
                         borderRadius: '15px',
                         display: 'flex',
                         justifyContent: 'flex-start', // Menyesuaikan posisi tombol
@@ -107,7 +116,7 @@ function KomunitasPage() {
                         style={{ 
                             width: '18rem', 
                             margin: '20px 0', 
-                            background: '#F2BBB6',
+                            background: '#E38B54',
                             borderRadius: '15px', 
                             overflow: 'hidden',
                         }}
@@ -120,7 +129,7 @@ function KomunitasPage() {
                         }}>
                             <div style={{ 
                             padding: '20px', // Padding internal bagian atas
-                            color: '#D05440', 
+                            color: 'white', 
                             fontSize: '28px', 
                             fontFamily: 'IBM Plex Sans, sans-serif', 
                             fontWeight: '600', 
@@ -134,7 +143,7 @@ function KomunitasPage() {
                             gap: '9px', // Gap antara sub-bagian
                             padding: '0 20px 20px 20px', // Padding internal bagian bawah
                             }}>
-                            <div className="TitleForum" style={{ color: '#D05440', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                            <div className="TitleForum" style={{ color: 'white', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
                                 Health and Nutrition
                             </div> 
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}> 
@@ -147,7 +156,7 @@ function KomunitasPage() {
                                     </div>
                                     <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>110K</div>
                                 </div>
-                            <div className="TitleForum" style={{ color: '#D05440', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                            <div className="TitleForum" style={{ color: 'white', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
                                 Cat and Dog
                             </div> 
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}> 
@@ -160,7 +169,7 @@ function KomunitasPage() {
                                     </div>
                                     <div style={{ color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>110K</div>
                                 </div>
-                            <div className="TitleForum" style={{ color: '#D05440', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
+                            <div className="TitleForum" style={{ color: 'white', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
                                 Petcare and Shelter
                             </div> 
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}> 
@@ -181,7 +190,7 @@ function KomunitasPage() {
                             style={{ 
                                 width: '18rem', 
                                 margin: '20px 0', 
-                                background: '#F2BBB6',
+                                background: '#E38B54',
                                 borderRadius: '15px', 
                                 overflow: 'hidden',
                             }}
@@ -196,7 +205,7 @@ function KomunitasPage() {
                             }}>
 
                                 <div style={{ 
-                                color: '#D05440', 
+                                color: 'white', 
                                 fontSize: '28px', 
                                 fontFamily: 'IBM Plex Sans, sans-serif', 
                                 fontWeight: '600', 
@@ -208,12 +217,12 @@ function KomunitasPage() {
                                 <img 
                                 src={LogoPawpals} 
                                 alt="Logo Pawpals" 
-                                style={{ width: '150px', height: '150px' }} 
+                                style={{ width: 'auto', height: 'auto', filter: 'drop-shadow(0px 4px 40px #ffffff)'}} 
                                 />
 
                                 <button style={{ 
                                 padding: '5px 30px', 
-                                background: '#D05440', 
+                                background: '#ED6A09', 
                                 borderRadius: '15px',
                                 border: 'none',
                                 color: 'white',
