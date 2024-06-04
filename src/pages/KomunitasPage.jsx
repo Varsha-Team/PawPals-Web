@@ -1,12 +1,11 @@
 import React from 'react'
 import { Container, Col, Row, Card, Form } from 'react-bootstrap'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import komunitasCard from '../assets/img/komunitas/komunitasCard.png';
 import LogoPawpals from '../assets/img/Pawpalsmobile.png'
 import { komunitas } from "../data/index.js"
 import { FaCommentDots , FaEye } from "react-icons/fa";
 
-function KomunitasPage() {
+function Komunitaspage() {
     return (
         <Container className='komunitas py-5' >
             <Row>
@@ -96,14 +95,14 @@ function KomunitasPage() {
                         Komunitas forum yang didedikasikan untuk pemilik dan penggemar ras kucing. Bergabunglah dalam diskusi tentang ras, pelatihan, anak kucing, ulasan makanan, penyelamatan, dan banyak lagi.
                         </Card.Text>
                         <button style={{ 
-                        padding: '5px 30px', 
-                        background: '#ED6A09', 
-                        borderRadius: '15px',
-                        display: 'flex',
-                        justifyContent: 'flex-start', // Menyesuaikan posisi tombol
-                        alignItems: 'center',
-                        gap: '14px',
-                        border:'none'
+                            padding: '5px 30px', 
+                            background: '#ED6A09', 
+                            borderRadius: '15px',
+                            display: 'flex',
+                            justifyContent: 'flex-start', 
+                            alignItems: 'center',
+                            gap: '14px',
+                            border: 'none',
                         }}>
                             <div style={{ width: '24px', height: '24px', position: 'relative' }}></div>
                             <div style={{ color: 'white', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
@@ -243,4 +242,4 @@ function KomunitasPage() {
     )
 }
 
-export default KomunitasPage
+export default Komunitaspage
