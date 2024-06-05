@@ -4,7 +4,7 @@ import NavbarComponent from "./components/NavbarComponent"
 import FooterComponent from "./components/FooterComponent"
 
 import Homepage from "./pages/Homepage"
-import Komunitaspage from "./pages/Komunitaspage"
+import Komunitaspage from "./pages/KomunitasPage"
 import Artikelpage from "./pages/Artikelpage"
 import Kontakpage from "./pages/Kontakpage"
 import Detailkomunitaspage from "./pages/DetailKomunitaspage"
