@@ -23,8 +23,8 @@ const NavbarComponent = () => {
                     </div>
                 </Nav>
                 <div>
-                        <button className="btn-daftar me-2">Daftar</button>
-                        <button className="btn-masuk" >Masuk</button>
+                        <Link to="/registerpage" className="btn-daftar me-2" style={{textDecoration: 'none'}}>Daftar</Link>
+                        <Link to="/loginpage" className="btn-masuk"  style={{textDecoration: 'none'}} >Masuk</Link>
                 </div>
                 </Navbar.Collapse>
             </Container>

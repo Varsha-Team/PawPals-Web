@@ -8,6 +8,8 @@ import Komunitaspage from "./pages/Komunitaspage"
 import Artikelpage from "./pages/Artikelpage"
 import Kontakpage from "./pages/Kontakpage"
 import Detailkomunitaspage from "./pages/DetailKomunitaspage"
+import Loginpage from "./pages/Loginpage"
+import Registerpage from "./pages/Registerpage"
 
 function App() {
   return <div>
@@ -21,6 +23,9 @@ function App() {
       <Route path="/artikelpage" Component={Artikelpage} />
       <Route path="/kontakpage" Component={Kontakpage} />
       <Route path="/detailkomunitaspage" Component={Detailkomunitaspage} />
+      <Route path="/loginpage" Component={Loginpage} />
+      <Route path="/registerpage" Component={Registerpage} />
+
     </Routes>
 
     <FooterComponent />
