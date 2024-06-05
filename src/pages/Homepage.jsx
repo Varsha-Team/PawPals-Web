@@ -184,6 +184,30 @@ const Homepage = () => {
             <div className="beriUlasan mt-5 py-5 d-flex flex-column align-items-center justify-content-center">
                     <h3 className="titleUlasan py-3">Beri Rating dan Ulasan Website Ini</h3>
                     <StarRating/>
+                    <Form.Control
+                        placeholder="Name"
+                        aria-label="Name"
+                        style={{
+                            margin:'20px 0px 0px 0px',
+                            padding:'10px 10px',
+                            width: '50%', 
+                            height: '50%',
+                            border: '1px solid black',
+                            borderRadius: '15px',
+                        }} 
+                        />
+                    <Form.Control
+                        placeholder="Email"
+                        aria-label="Email"
+                        style={{
+                            margin:'20px 0px 0px 0px',
+                            padding:'10px 10px',
+                            width: '50%', 
+                            height: '50%',
+                            border: '1px solid black',
+                            borderRadius: '15px',
+                        }} 
+                        />
                     <Form.Control className='Formcontrol mt-3' placeholder="Tuliskan Kesan Pesan Kamu Kepada Kami :)" style={{ width: '50%', height: '50%', background: 'white', borderRadius: 15, border: '1px #A1A1A1 solid' }} as="textarea" rows={3} />
                     <button
                             className="ButtonRating"
