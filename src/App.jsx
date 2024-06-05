@@ -10,6 +10,7 @@ import Kontakpage from "./pages/Kontakpage"
 import Detailkomunitaspage from "./pages/DetailKomunitaspage"
 import Loginpage from "./pages/Loginpage"
 import Registerpage from "./pages/Registerpage"
+import ArtikelSatu from "./pages/ArtikelSatu";
 
 function App() {
   return <div>
@@ -25,7 +26,7 @@ function App() {
       <Route path="/detailkomunitaspage" Component={Detailkomunitaspage} />
       <Route path="/loginpage" Component={Loginpage} />
       <Route path="/registerpage" Component={Registerpage} />
-
+      <Route path="/artikelsatu" Component={ArtikelSatu} />
     </Routes>
 
     <FooterComponent />

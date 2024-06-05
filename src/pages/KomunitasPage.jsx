@@ -94,8 +94,9 @@ function Komunitaspage() {
                         <Card.Text style={{ width: '250px', color: 'white', fontSize: '14px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '400' }}>
                         Komunitas forum yang didedikasikan untuk pemilik dan penggemar ras kucing. Bergabunglah dalam diskusi tentang ras, pelatihan, anak kucing, ulasan makanan, penyelamatan, dan banyak lagi.
                         </Card.Text>
+                        <Link to="/detailkomunitaspage"style={{textDecoration: 'none',}}>
                         <button style={{ 
-                            padding: '5px 30px', 
+                            padding: '5px 60px', 
                             background: '#ED6A09', 
                             borderRadius: '15px',
                             display: 'flex',
@@ -104,11 +105,11 @@ function Komunitaspage() {
                             gap: '14px',
                             border: 'none',
                         }}>
-                            <div style={{ width: '24px', height: '24px', position: 'relative' }}></div>
                             <div style={{ color: 'white', fontSize: '16px', fontFamily: 'IBM Plex Sans, sans-serif', fontWeight: '600' }}>
                                 Join Community
                             </div>
                         </button>
+                        </Link>
                     </Card.Body>
                     </Card>
                     <Card className="Card-Information2" 
