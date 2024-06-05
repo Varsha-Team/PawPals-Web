@@ -16,7 +16,6 @@ export const navLinks = [
 ];
 
 
-
 export const artikelHomepage = [
   {
     id: 1,
