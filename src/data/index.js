@@ -11,6 +11,8 @@ import People2 from "../assets/img/testimonial/people-2.jpg";
 import People3 from "../assets/img/testimonial/people-3.jpg";
 
 import komunitas1 from "../assets/img/komunitas/komunitasCard.png"
+import komunitas2 from "../assets/img/komunitas/komunitasCard2.png"
+import komunitas3 from "../assets/img/komunitas/komunitasCard3.png"
 
 export const navLinks = [
 ];
@@ -141,17 +143,17 @@ export const komunitas = [
   },
   {
     id: 2,
-    image: komunitas1,
-    category: "Anjing",
-    desc: "Halo semuanya, disini kami membahas hal menarik mengenai anjing",
+    image: komunitas2,
+    category: "Prilaku Anjing",
+    desc: "Anjing selalu menggonggong pada malam hari",
     member: "1400 member",
     comment: "989+",
   },
   {
     id: 3,
-    image: komunitas1,
-    category: "Kucing",
-    desc: "Halo semuanya, disini kami membahas hal menarik mengenai kucing",
+    image: komunitas3,
+    category: "Perilaku Kucing",
+    desc: "Kucing selalu mencakar",
     member: "1500 member",
     comment: "979+",
   },
